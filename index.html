@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cronômetro e Registro de Voltas</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cronômetro e Registro de Voltas</h1>
+
+    <div id="cronometro">00:00:00:000</div>
+
+    <label for="numeroAtleta">Número do Atleta:</label>
+    <input type="text" id="numeroAtleta" placeholder="Número">
+
+    <label for="nomeAtleta">Nome do Atleta:</label>
+    <input type="text" id="nomeAtleta" placeholder="Nome">
+
+    <label for="categoriaAtleta">Categoria do Atleta:</label>
+    <input type="text" id="categoriaAtleta" placeholder="Categoria">
+
+    <button onclick="iniciarCronometro()">Iniciar</button>
+    <button onclick="registrarVolta()">Registrar Volta</button>
+    <button onclick="pararCronometro()">Parar</button>
+    <button onclick="resetarCronometro()">Resetar</button>
+
+    <table id="tabela-voltas">
+        <thead>
+            <tr>
+                <th>Número do Atleta</th>
+                <th>Nome do Atleta</th>
+                <th>Categoria do Atleta</th>
+                <th>Volta</th>
+                <th>Tempo</th>
+            </tr>
+        </thead>
+        <tbody id="dados-voltas">
+            <!-- Os dados das voltas serão inseridos aqui dinamicamente -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
