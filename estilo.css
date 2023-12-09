@@ -14,6 +14,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adicionei uma largura máxima para melhorar a responsividade */
+    max-width: 600px; /* Largura máxima */
 }
 
 label {
@@ -56,4 +58,11 @@ th, td {
 th {
     background-color: #4caf50;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    /* Estilos específicos para telas menores (ex: dispositivos móveis) */
+    .container {
+        width: 90%; /* Ajuste a largura conforme necessário para dispositivos móveis */
+    }
 }
